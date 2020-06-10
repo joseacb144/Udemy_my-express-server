@@ -14,6 +14,10 @@ app.get("/about", function(req, res){
   res.send("Hello there! My name is Jose Chavez. I am a computer science student at Texas State University. I should have my Master of Science in Computer Science by Fall 2021!");
 })
 
+app.get("/hobbies", function(req, res){
+  res.send("<ul><li>Code</li><li>Videography</li><li>Kayaking</li></ul");
+})
+
 app.listen(3000, function(){
   console.log("Server started on port 3000");
 });
